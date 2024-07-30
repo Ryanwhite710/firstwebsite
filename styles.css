@@ -1,0 +1,246 @@
+:root {
+    --blue: #1E90FF;
+    --green: #7CB342;
+    --orange: #FFA726;
+    --yellow: #FFD600;
+    --red: #E53935;
+    --brown: #795548;
+    --gray: #757575;
+    --purple: #8E24AA;
+    --teal: #26A69A;
+    --pink: #EC407A;
+    --cream: #FFFDD0;
+    --txornage: #F44611;
+    --darkgrey: #3b3b3b;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#cities-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 1px;
+}
+
+header {
+    display: flex;
+    padding: 1%;
+    margin: 1px;
+    max-width: 50%;
+    font-size: 2.5rem;
+}
+
+h1 {
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+}
+
+#main-nav {
+    display: flex;
+    padding: 1%;
+    margin: 1px;
+    max-width: 50%;
+    font-size: 2.5rem;
+}
+
+#main-nav a {
+    color: white;
+    text-decoration: none;
+    vertical-align: middle;
+    padding: 15px;
+    margin: 5px;
+    border-radius: 15%;
+}
+
+#main-nav a:hover {
+    box-shadow: 0 9px 12px 0 rgba(255, 133, 3, 0.695);
+    color: white;
+}
+
+img {
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 5%;
+    border: orange solid 2px;
+}
+
+.image-container {
+    position: relative;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+section {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.city-article {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    padding: 5px;
+    max-width: 1200px;
+    margin-bottom: 20px;
+}
+
+.icon-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15vh;
+    color: orange;
+    margin-right: 20px;
+}
+
+.text-container {
+    flex: 3;
+    max-width: 100%;
+    color: white;
+    padding: 10px;
+    font-size: 2.5rem;
+}
+
+.text-container p {
+    line-height: 1.6;
+    font-size: 18px;
+    font-size: 2.5rem;
+}
+
+/* Aside bar */
+aside.social-sidebar {
+    width: 200px;
+    margin: auto;
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+aside.social-sidebar h2 {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+aside.social-sidebar ul {
+    list-style: none;
+    padding: 2px;
+    margin-right: 3px;
+}
+
+aside.social-sidebar ul li {
+    display: inline-block;
+    margin: 10px;
+}
+
+
+
+aside.social-sidebar a {
+    margin: auto;
+    display: block;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: white;
+    color: black;
+    font-size: 48px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+@media screen and (min-width: 1600px) {
+    aside.social-sidebar {
+        position: absolute;
+        width: 100px;
+    }
+    
+    aside.social-sidebar ul li {
+        margin-right: 0px;
+        margin-top: 15px;
+    }
+}
+
+aside.social-sidebar a:hover {
+    background-color: orange    ;
+}
+
+/* contact page */
+form {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    max-width: 1000px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 1.5rem;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    width: 95%;
+    padding: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+aside.header-img {
+    position: absolute;
+    padding: 20px;
+    font-size: x-large;
+    top: 35px;
+    left: 16px;
+    background-color: rgba(0, 0, 0, 0.2); 
+    color: var(--white);
+    border-radius: 25px; 
+}
+
+.homepage-table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    font-size: 1.5rem;
+}
+
+.homepage-table th, .homepage-table td {
+    border: 1px solid var(--orange);
+    padding: 8px;
+    text-align: center;
+}
+
+.homepage-table th {
+    background-color: var(--darkgrey);
+    color: var(--orange);
+}
+
+.homepage-table tr:nth-child(even) {
+    background-color: var(--gray);
+}
+
+.homepage-table tr:hover {
+    background-color: var(--cream);
+}
